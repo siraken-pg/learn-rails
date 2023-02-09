@@ -15,6 +15,9 @@ case $1 in
   ${DC} down
   ${DC} up
 ;;
+"bash")
+  ${DC} exec web bash
+;;
 "setup")
   ${DC} run --no-deps web rails new . --force --database=postgresql
 ;;
