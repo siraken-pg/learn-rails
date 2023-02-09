@@ -1,0 +1,27 @@
+#!/bin/bash
+set -Ceux
+
+ARGS=${@:2}
+DC="docker compose"
+
+case $1 in
+"up")
+  ${DC} up
+;;
+"down")
+  ${DC} down
+;;
+"restart")
+  ${DC} down
+  ${DC} up
+;;
+"setup")
+  ${DC} run --no-deps web rails new . --force --database=postgresql
+;;
+"db:create")
+  ${DC} run web rake db:create
+;;
+*)
+  echo Unexpected command: $1
+;;
+esac
