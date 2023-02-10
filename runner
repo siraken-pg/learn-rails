@@ -18,9 +18,6 @@ case $1 in
 "bash")
   ${DC} exec web bash
 ;;
-"setup")
-  ${DC} run --no-deps web rails new . --force --database=postgresql
-;;
 "db:create")
   ${DC} run web rake db:create
 ;;

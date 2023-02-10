@@ -6,12 +6,9 @@
 ## Setup
 
 ```bash
-# Install dependencies
-./runner setup
+# Boot the app
+./runner up
 
 # Create database (run in another terminal)
 ./runner db:create
-
-# Boot the app
-./runner up
 ```
