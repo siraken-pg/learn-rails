@@ -15,6 +15,9 @@ case $1 in
   ${DC} down
   ${DC} up
 ;;
+"build")
+  ${DC} build
+;;
 "bash")
   ${DC} exec web bash
 ;;
