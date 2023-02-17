@@ -1,0 +1,23 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Users</h1>
+
+<div id="users">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-grid gap-5">
+        <% @users.each do |user| %>
+          <div class="bg-white shadow-sm p-3 d-block">
+            <h2><%= user.name %></h2>
+            <p>
+              Created: <%= user.created_at %><br>
+              Updated: <%= user.updated_at %>
+            </p>
+          </div>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

@@ -33,6 +33,9 @@ gem "faker"
 # paginator
 gem 'kaminari'
 
+# twbs
+gem 'bootstrap', '~> 5.2.3'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
